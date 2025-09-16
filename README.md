@@ -31,7 +31,3 @@ We welcome pull requests and issues to discuss improvements to the website’s c
 ## Contact
 
 For any inquiries, please contact us via [issues](https://github.com/Reflective-Technology/Reflective-Technology.github.io/issues) or email.
-
----
-
-> You may customize this README to better fit your project’s specifics.
