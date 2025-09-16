@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>CyberEyes</title>
+    <meta name="keywords" content="資訊安全, 資安威脅, 示警通知, 系統整合, 原始日誌集中收集及正規化, Cyber Security, Cybersecurity Threats and Vulnerabilities, Instant Notifications, System Integration, Log Collection and Parsing" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/meta.jpg" />
+    <meta property="og:title" content="CyberEyes" />
+    <meta name="description" property="og:description" content="CyberEyes API 威脅防護分析系統" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="ZUSO Generation">
+    <meta name="twitter:title" content="CyberEyes">
+    <meta name="twitter:description" content="CyberEyes API 威脅防護分析系統">
+    <meta name="twitter:creator" content="ZUSO Generation">
+    <meta name="twitter:image:src" content="assets/images/meta.jpg">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#008ad2">
+    <meta name="msapplication-TileColor" content="#008ad2">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-anim"><img src="assets/images/loading.gif" alt=""></div>
+    </div>
+    <div id="container">
+        <div id="header" class="site-header sticky">
+            <div class="bg"></div>
+            <div class="container">
+                <a class="logo" href="index.html">CyberEyes</a>
+                <div class="menu-toggle">
+                    <div class="c-hamburger"><span></span></div>
+                </div>
+                <div id="site-menu" class="site-menu">
+                    <div class="menu-panel">
+                        <ul class="main-menu">
+                            <li><a href="#home">首頁</a></li>
+                            <li><a href="https://medium.com/zusogeneration" target="_blank">技術專欄</a></li>
+                            <li><a href="#about">關於產品</a></li>
+                            <li><a href="#advantage">技術優勢</a></li>
+                            <li><a href="#order">訂購及預約</a></li>
+                        </ul>
+                        <div class="header-link">
+                            <ul>
+                                <li><a href="mailto:service@cybereyes.ai">service@cybereyes.ai</a></a></li>
+                                <li><a href="https://www.facebook.com/ZUSOGeneration" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content" class="site-content header--sticky">
+            <div class="section kv">
+                <span id="home" class="section-anchor"></span>
+                <div class="bg"></div>
+                <div id="particles-js" class="particles"></div>
+                <div class="container">
+                    <div class="kv-content">
+                        <h1 class="main-text">CyberEyes<br />Web 威脅狩獵解決方案</h1>
+                        <h4 class="sub-text">還原 Web 威脅事件真實樣貌，讓網路攻擊無所遁形</span></h4>
+                        <p>簡化企業資安維運流程，偵測與管理的協同並行，打造企業組織中實體、虛擬和應用程式容器化整合，達到縮短辨識 Web 威脅時間，賦予企業高安全環境。</p>
+                    </div>
+                    <div class="kv-image"></div>
+                </div>
+            </div>
+            <div class="section-group">
+                <div class="bg"></div>
+                <div class="section about">
+                    <span id="about" class="section-anchor"></span>
+                    <div class="container">
+                        <h2 class="heading">關於產品</h2>
+                        <div class="list">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/about1.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="main-text">減少人力與設備成本<br />符合資安合規等多項業務需求</div>
+                                    <p>資安專家與研究團隊打造<br />
+                                        即時呈現資安現況<br />
+                                        威脅警示可視化</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/about2.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="main-text">即時偵測網路威脅<br />凸顯 Web 存取入口風險樣態</div>
+                                    <p>外部存取服務已成為駭客首要攻擊目標<br />
+                                        可能遭到 SQL Injection、DDoS、XSS 攻擊<br />
+                                        嚴重危及企業形象並造成財務損失</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/about3.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="main-text">個資及敏感資料外洩<br />凡走過必留下痕跡</div>
+                                    <p>集中管理日誌巨量資料<br />
+                                        專注分析對外存取入口威脅事件<br />
+                                        自動化產出定期報表</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section features">
+                    <span id="features" class="section-anchor"></span>
+                    <div class="container">
+                        <h3 class="heading">CyberEyes <span class="text-block">將給您全方位的防護</span></h3>
+                        <div class="list">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/features1.svg">
+                                </div>
+                                <div class="main-text">即時更新 Web 威脅事件</div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/features2.svg">
+                                </div>
+                                <div class="main-text">檢測企業資料外洩</div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/features3.svg">
+                                </div>
+                                <div class="main-text">盤點資產設備現況</div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/features4.svg">
+                                </div>
+                                <div class="main-text">重要伺服器執行危害 Cmd 示警</div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/features5.svg">
+                                </div>
+                                <div class="main-text">驗證企業資安設備投資有效性</div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="assets/images/features6.svg">
+                                </div>
+                                <div class="main-text">完整資安事件日誌軌跡</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section advantage">
+                <span id="advantage" class="section-anchor"></span>
+                <div class="bg"></div>
+                <div class="container">
+                    <h2 class="heading">技術優勢</h2>
+                    <div class="group">
+                        <div class="item">
+                            <div class="item__header">
+                                提高分析 Web 攻擊深、廣度<br />完美辨識威脅事件與記錄
+                            </div>
+                            <div class="item__content">
+                                <ul>
+                                    <li>結合 ZUSO 資安研究團隊與紅隊攻擊思路</li>
+                                    <li>強化分析 Web 服務攻擊事件</li>
+                                    <li>快速檢索外部 Web 服務存取現況</li>
+                                    <li>透過威脅情資狩獵關鍵事件</li>
+                                    <li>CyberMind 可視化事件關聯</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__header">
+                                彈性化部署<br />針對 大 / 中 / 小型企業 網路架構
+                            </div>
+                            <div class="item__content">
+                                <ul>
+                                    <li>地端架構提供 CyberEyes All in One 硬體設備</li>
+                                    <li>混合架構提供虛擬環境 減少轉送設備成本</li>
+                                    <li>雲端架構支援 K8s 系統</li>
+                                    <li>使用容器化部署 加強效能</li>
+                                    <li>有效量化需求 減少多餘投資成本</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="item">
+                            <a href="#adv-feature" class="popup-modal" data-effect="mfp-zoom-in">
+                                <div class="image">
+                                    <img src="assets/images/advantage1.png" alt="">
+                                </div>
+                                <div class="main-text">產品功能</div>
+                                <span class="action">MORE</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#adv-extra" class="popup-modal" data-effect="mfp-zoom-in">
+                                <div class="image">
+                                    <img src="assets/images/advantage2.png" alt="">
+                                </div>
+                                <div class="main-text">產品特色</div>
+                                <span class="action">MORE</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#adv-system" class="popup-modal" data-effect="mfp-zoom-in">
+                                <div class="image">
+                                    <img src="assets/images/advantage3.png" alt="">
+                                </div>
+                                <div class="main-text">產品規格</div>
+                                <span class="action">MORE</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section order">
+                <span id="order" class="section-anchor"></span>
+                <div class="bg"></div>
+                <div class="container">
+                    <h2 class="heading">訂購及預約</h2>
+                    <p>如您需要尋求資訊安全的防護或<span class="text-block">導入專業的資安規劃服務，</span><br />
+                        歡迎來信至 <a href="mailto:sales@zuso.ai">sales@zuso.ai</a> <span class="text-block">與我們聯絡，我們將竭誠為您服務。</span></p>
+                    <!--<p>您亦可利用下方表格留言，<span class="text-block">我們會盡快回覆給您。</span> <span class="text-block">( *為必填欄位 )</span></p>
+                    <div class="form-container">
+                        <form class="form">
+                            <div class="form-group">
+                                <div class="form-group__col">
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>姓名</div>
+                                        <div class="form-content"><input class="form-control form-control--md" type="text" placeholder=""></div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>職稱</div>
+                                        <div class="form-content"><input class="form-control form-control--md" type="text" placeholder=""></div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>聯絡電話</div>
+                                        <div class="form-content"><input class="form-control" type="text" placeholder=""></div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>所屬行業</div>
+                                        <div class="form-content"><input class="form-control form-control--md" type="text" placeholder=""></div>
+                                    </div>
+                                </div>
+                                <div class="form-group__col">
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>電子信箱</div>
+                                        <div class="form-content"><input class="form-control" type="text" placeholder=""></div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>公司名稱</div>
+                                        <div class="form-content"><input class="form-control" type="text" placeholder=""></div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>您的部門</div>
+                                        <div class="form-content"><input class="form-control" type="text" placeholder=""></div>
+                                    </div>
+                                    <div class="form-section">
+                                        <div class="form-label"><span class="required">*</span>您的需求</div>
+                                        <div class="form-content">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action"><button type="submit" class="btn">完成送出</button></div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+            <div class="section map">
+                <div class="bg"></div>
+                <div class="container">
+                    <a href="https://goo.gl/maps/3Y7haKb672cYZXGb6" target="_blank">
+                        <div class="pin"><img src="assets/images/icon-map.svg"></div>
+                        <div class="box">
+                            <div class="main-text">
+                                Reflective Technology<br />
+                                如映科技
+                            </div>
+                            <p>106 台北市大安區忠孝東路四段 46 號 10 樓</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="sticky-box">
+                <ul>
+                    <li><a href="https://www.facebook.com/ZUSOGeneration" target="_blank"><span class="link link-fb">ZUSO Generation</span></a></li>
+                    <li><a href="mailto:service@zuso.ai"><span class="link link-mail">Mail to ZUSO</a></a></li>
+                </ul>
+            </div> -->
+        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="group">
+                    <div class="block block-left">
+                        <div class="footer-logo">
+                            <img src="assets/images/footer-logo.svg" alt="ZUSO Generation">
+                        </div>
+                        <div class="footer-info">
+                            <p><span class="main-text"> Reflective Technology 如映科技</span><br />
+                                106 台北市大安區忠孝東路四段 46 號 10 樓<br />
+                                <span class="text-block" style="padding-right: 1em;">Tel: +886-2-2731-0700</span> <span class="text-block">Fax: +886-2-2731-0670</span></p>
+                        </div>
+                    </div>
+                    <div class="block block-right">
+                        <a href="https://www.facebook.com/ZUSOGeneration" target="_blank"><i class="icon icon-facebook"></i></a>
+                        <p class="copyright">Copyright &copy; 2025 Reflective Technology Co., Ltd. <span class="text-block">All rights reserved.</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a id="to-top" class="to-top" href="#top" rel="m_PageScroll2id">top</a>
+    </div>
+    <!-- 產品功能 -->
+    <div id="adv-feature" class="mfp-hide white-popup-block mfp-with-anim adv-feature">
+        <div class="popup__header">
+            產品功能
+        </div>
+        <div class="popup__content">
+            <div class="swiper-section">
+                 <!-- Swiper -->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature1.png"></div></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <div class="content">
+                    <h3 class="title">視覺化 即時事件情報儀表板</h3>
+                    <ul>
+                        <li>即時呈現內、外部資安現況</li>
+                        <li>檢視伺服器端點連線狀況</li>
+                        <li>系統日誌流量統計</li>
+                        <li>產出合規性報告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-section">
+                 <!-- Swiper -->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature2-1.png"></div></div>
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature2-2.png"></div></div>
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature2-3.png"></div></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <div class="content">
+                    <h3 class="title">紅隊思維 強化事件關聯分析</h3>
+                    <ul>
+                        <li>Web 威脅日誌關聯化</li>
+                        <li>結合實際白帽駭客視野優化規則告警</li>
+                        <li>客製查詢事件軌跡</li>
+                        <li>快速進行調查與分析</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-section">
+                 <!-- Swiper -->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature3-1.png"></div></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <div class="content">
+                    <h3 class="title">原始日誌分析查詢 完整軌跡</h3>
+                    <ul>
+                        <li>記錄完整的系統操作指令</li>
+                        <li>友善搜尋與篩選機制</li>
+                        <li>自訂威脅情資事件模組</li>
+                        <li>完整呈現外到內攻擊軌跡</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-section">
+                 <!-- Swiper -->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature4-1.png"></div></div>
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-feature4-2.png"></div></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <div class="content">
+                    <h3 class="title">即時性 吿警列表</h3>
+                    <ul>
+                        <li>設定監控異常通知</li>
+                        <li>風險程度 危急 / 高 / 中 / 低</li>
+                        <li>主動識別異常行為</li>
+                        <li>即時發送至通訊軟體或郵件</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="popup-modal-dismiss" href="#">Dismiss</a>
+    </div>
+    <!-- 產品特色 -->
+    <div id="adv-extra" class="mfp-hide white-popup-block mfp-with-anim adv-extra">
+        <div class="popup__header">
+            產品特色
+        </div>
+        <div class="popup__content">
+            <div class="swiper-section">
+                 <!-- Swiper -->
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-extra1-01.png"></div></div>
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-extra1-02.png"></div></div>
+                      <div class="swiper-slide"><div class="image"><img src="assets/images/c-extra1-03.png"></div></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                <div class="content">
+                    <h3 class="title">兼具日誌的收納與集中管理</h3>
+                    <p>支援接收不同的日誌來源，包含應用程式、網路、伺服器等日誌，監控企業資安事件活動，<br />協助 IT 人員減少找出異常原因（root cause）所花費的時間成本，以實現 IT 管理流程邁向智能化。</p>
+                    <br />
+                    <ul>
+                        <li>日誌收集軟體整合套件</li>
+                        <li>原始日誌收集與正規化</li>
+                        <li>集中管理分散資料儲存</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-section">
+                <div class="content">
+                    <h3 class="title">關注企業資安能見度<br />明確監控各項系統的資安狀況</h3>
+                    <ul>
+                        <li>即時凸顯 Web 存取入口風險樣態</li>
+                        <li>內部存取權限的管控資訊</li>
+                        <li>偵測執行錯誤的參數語法</li>
+                        <li>網路設備及伺服器狀態日誌</li>
+                        <li>敏感資料的 uri 存取紀錄</li>
+                        <li>常見駭客攻擊手法等</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a class="popup-modal-dismiss" href="#">Dismiss</a>
+    </div>
+    <!-- 產品規格 -->
+    <div id="adv-system" class="mfp-hide white-popup-block mfp-with-anim adv-system">
+        <div class="popup__header">
+            產品規格
+        </div>
+        <div class="popup__content">
+            <div class="swiper-section">
+                <div class="content">
+                    <h3 class="title">硬體規格</h3>
+                    <ul>
+                        <li>CPU：16 x Intel Xeon Quad Core or equivalent </li>
+                        <li>Memory：128G</li>
+                        <li>Disk Space：3TB x 3</li>
+                        <li>Ethernet Interfaces：2 port</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-section">
+                <div class="content">
+                    <h3 class="title">接收器規格</h3>
+                    <ul>
+                        <li>CPU：4 x Intel Xeon Quad Core or equivalent</li>
+                        <li>Memory：16G</li>
+                        <li>Disk Space：1TB</li>
+                        <li>Ethernet Interfaces：2 port</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-section">
+                <div class="content">
+                    <h3 class="title">軟體規格</h3>
+                    <ul>
+                        <li>Ubuntu：22.04 Server 版本</li>
+                    </ul>
+                    <br />
+                    <p>註：本產品規格主要依據客戶的實際系統環境調整。</p>
+                </div>
+            </div>
+        </div>
+        <a class="popup-modal-dismiss" href="#">Dismiss</a>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="assets/js/jquery.hashchange.min.js"></script>
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <script src="assets/js/jquery.lazyload.js"></script>
+    <!-- <script src="assets/js/particles.min.js"></script> -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
